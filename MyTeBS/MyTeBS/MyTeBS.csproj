@@ -10,6 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="FreshMvvm" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Core\Base\" />
+    <Folder Include="Core\Controls\" />
+    <Folder Include="Core\Utils\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Modules\Login\" />
+    <Folder Include="Modules\Home\" />
+    <Folder Include="Modules\Dictionary\" />
+    <Folder Include="Modules\MyClaim\" />
   </ItemGroup>
 </Project>
