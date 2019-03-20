@@ -4,7 +4,7 @@ using MyTeBS.Modules.Login;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace MyTeBS
 {
   public partial class App : Application
@@ -21,7 +21,7 @@ namespace MyTeBS
       };
       MainPage = basicNavContainer;
 
-      MainPage = new MainPage();
+   
     }
 
     protected override void OnStart()
