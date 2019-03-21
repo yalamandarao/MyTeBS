@@ -1,5 +1,7 @@
 using System;
 using MyTeBS.Core.Base;
+using Xamarin.Forms.Xaml;
+
 
 namespace MyTeBS.Modules.Login
 {

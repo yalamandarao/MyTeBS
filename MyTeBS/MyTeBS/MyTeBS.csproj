@@ -23,5 +23,6 @@
     <Folder Include="Modules\Home\" />
     <Folder Include="Modules\Dictionary\" />
     <Folder Include="Modules\MyClaim\" />
+    <Folder Include="Modules\ForgotPassword\" />
   </ItemGroup>
 </Project>
