@@ -21,7 +21,6 @@ namespace MyTeBS
       };
       MainPage = basicNavContainer;
 
-   
     }
 
     protected override void OnStart()
