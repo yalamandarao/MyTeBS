@@ -4,6 +4,24 @@
                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
                x:Class="MyTeBS.Modules.Home.HomePage">
   <base:BasePage.Content>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="40*"/>
+        <RowDefinition Height="70*"/>
+        </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+      <Frame Grid.Row="0" 
+             Grid.Column="0"
+             BackgroundColor="Red"
+             IsClippedToBounds="false"
+             CornerRadius="0"
+             HasShadow="false">
+        
+        </Frame>
+      
+    </Grid>
   </base:BasePage.Content>
 </base:BasePage>
 
