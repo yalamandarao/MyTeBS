@@ -10,6 +10,6 @@ namespace MyTeBS.Modules.Home
     public HomePage()
     {
       InitializeComponent();
-    }
+        }
   }
 }

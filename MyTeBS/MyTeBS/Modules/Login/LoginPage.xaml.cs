@@ -9,7 +9,10 @@ namespace MyTeBS.Modules.Login
   {
     public LoginPage()
     {
+
       InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+
+        }
     }
-  }
 }

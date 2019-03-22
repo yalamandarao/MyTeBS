@@ -4,5 +4,6 @@
              x:Class="MyTeBS.Core.Base.BasePage"
              Style="{StaticResource PageStyle}" >
   <ContentPage.Content>
+
   </ContentPage.Content>
 </ContentPage>
