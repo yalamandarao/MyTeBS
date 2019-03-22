@@ -4,8 +4,19 @@
              x:Class="MyTeBS.App">
    <Application.Resources>
     <ResourceDictionary>
-       <Color x:Key="ButtonColor">#333d8e</Color>
-       <Color x:Key="PressedButtonColor">#8c1335</Color>
+            <Color x:Key="NavbarTextColor">#ffffff</Color>
+            <Color x:Key="NavbarTintColor">#256AA7</Color>
+            <Color x:Key="NavbarSubTintColor">#333d8e</Color>
+            <Color x:Key="PrimaryButtonColor1">#ff6400</Color>
+            <Color x:Key="PrimaryButtonColor2">#007aff</Color>
+            <Color x:Key="ButtonColor">#333d8e</Color>
+            <Color x:Key="PressedButtonColor">#8c1335</Color>
+
+            <!-- ************* Consumption Page ***************** -->
+            <Color x:Key="LabelGrayColor">#84858d</Color>
+            <Color x:Key="LabelBlueColor">#34408c</Color>
+            <Color x:Key="LabelSkyColor">#1db6cd</Color>
+            <Color x:Key="LabelBlackColor">#0a0c1c</Color>
       <Style x:Key="PageStyle" TargetType="ContentPage">
         <Setter Property="BackgroundColor" Value="#ebebeb"/>
         </Style>

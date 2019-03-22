@@ -98,6 +98,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\BorderlessEntryRenderer.cs" />
+    <Compile Include="Renderers\ButtonRenderer.cs" />
+    <Compile Include="Renderers\ClearEntryEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -174,5 +177,6 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\tebs_logo.imageset\" />
     <Folder Include="Assets.xcassets\group.imageset\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
 </Project>
