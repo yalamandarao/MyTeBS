@@ -6,7 +6,7 @@
   <base:BasePage.Content>
     <Grid>
       <Grid.RowDefinitions>
-        <RowDefinition Height="40*"/>
+        <RowDefinition Height="30*"/>
         <RowDefinition Height="70*"/>
         </Grid.RowDefinitions>
       <Grid.ColumnDefinitions>
@@ -19,6 +19,48 @@
              CornerRadius="0"
              HasShadow="false">
         
+        <Grid>
+          <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="20*"/>
+              <ColumnDefinition Width="80*"/>
+          </Grid.ColumnDefinitions>
+           <Image BackgroundColor="Purple"
+                  Grid.Row="0" 
+                  Grid.Column="0"
+                  Grid.RowSpan="5"
+                 >
+            </Image>
+          <Label Text="Yalamandarao Inaganti" 
+                 Font="Bold, 20"
+                 Grid.Row="0" Grid.Column="1"
+                 TextColor="White"/>
+           <Label Text="Sr. Mobile Developer" 
+                 Font="Bold, 14"
+                 Grid.Row="1" Grid.Column="1"
+                 TextColor="White"/>
+           <Label Text="Email: Yalamandarao.i@totalebizsolutions.com" 
+                 Font="Bold, 14"
+                 Grid.Row="2" Grid.Column="1"
+                 TextColor="White"/>
+           <Label Text="Phone: +65 91366778" 
+                 Font="Bold, 14"
+                 Grid.Row="3" Grid.Column="1"
+                 TextColor="White"/>
+          <Label Text="www.totalebizsolutions.com" 
+                 Font="Bold, 14"
+                 Grid.Row="4" Grid.Column="1"
+                 TextColor="White"/>
+          
+          
+        </Grid>
+         
         </Frame>
       
     </Grid>
