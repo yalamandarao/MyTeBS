@@ -67,6 +67,7 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Resources\group.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -91,6 +92,11 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\tebs_logo.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\tebs_logo.png" />
     <AndroidResource Include="Resources\drawable\splash_background.xml" />
+    <AndroidResource Include="Resources\drawable\group.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\group.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\group.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\group.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\group.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

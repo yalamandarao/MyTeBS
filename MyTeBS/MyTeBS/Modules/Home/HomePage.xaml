@@ -1,67 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <base:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
                xmlns:base = "clr-namespace:MyTeBS.Core.Base;assembly=MyTeBS"
+               xmlns:home="clr-namespace:MyTeBS.Modules.Home;assembly=MyTeBS"
+               xmlns:coll="clr-namespace:System.Collections.ObjectModel;assembly=System"
+               xmlns:flowcontrols="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
                x:Class="MyTeBS.Modules.Home.HomePage">
+                 
+  <base:BasePage.BindingContext>
+    <home:HomePageModel Name = "Yalamandarao inaganti" 
+                        Designation = "Sr. Mobile Developer"
+                        Email = "yalamandarao.i@totalebizsolutions.com"
+                        PhoneNumber="+65 91366778">
+      <home:HomePageModel.ObservableModuleCellViewModel>
+        <coll:ObservableCollection x:TypeArguments="home:ModuleCellViewModel">
+          <home:ModuleCellViewModel TitleName = "Calim" IconName = "group" />
+           <home:ModuleCellViewModel TitleName = "Calim" IconName = "group" />
+           <home:ModuleCellViewModel TitleName = "Calim" IconName = "group" />
+          </coll:ObservableCollection>
+        </home:HomePageModel.ObservableModuleCellViewModel>
+      </home:HomePageModel>
+    </base:BasePage.BindingContext>
+  
   <base:BasePage.Content>
     <Grid>
       <Grid.RowDefinitions>
-        <RowDefinition Height="30*"/>
-        <RowDefinition Height="70*"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-      <Frame Grid.Row="0" 
-             Grid.Column="0"
-             BackgroundColor="Red"
-             IsClippedToBounds="false"
-             CornerRadius="0"
-             HasShadow="false">
-        
-        <Grid>
-          <Grid.RowDefinitions>
-              <RowDefinition Height="Auto"/>
-              <RowDefinition Height="Auto"/>
-              <RowDefinition Height="Auto"/>
-              <RowDefinition Height="Auto"/>
-              <RowDefinition Height="Auto"/>
-          </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="20*"/>
-              <ColumnDefinition Width="80*"/>
-          </Grid.ColumnDefinitions>
-           <Image BackgroundColor="Purple"
-                  Grid.Row="0" 
-                  Grid.Column="0"
-                  Grid.RowSpan="5"
-                 >
-            </Image>
-          <Label Text="Yalamandarao Inaganti" 
-                 Font="Bold, 20"
-                 Grid.Row="0" Grid.Column="1"
-                 TextColor="White"/>
-           <Label Text="Sr. Mobile Developer" 
-                 Font="Bold, 14"
-                 Grid.Row="1" Grid.Column="1"
-                 TextColor="White"/>
-           <Label Text="Email: Yalamandarao.i@totalebizsolutions.com" 
-                 Font="Bold, 14"
-                 Grid.Row="2" Grid.Column="1"
-                 TextColor="White"/>
-           <Label Text="Phone: +65 91366778" 
-                 Font="Bold, 14"
-                 Grid.Row="3" Grid.Column="1"
-                 TextColor="White"/>
-          <Label Text="www.totalebizsolutions.com" 
-                 Font="Bold, 14"
-                 Grid.Row="4" Grid.Column="1"
-                 TextColor="White"/>
-          
-          
-        </Grid>
-         
-        </Frame>
+     <home:EmpCardView Grid.Row="0" 
+                       Grid.Column="0"
+                       NameTitle = "{Binding Name}"
+                       DesignationTitle = "{Binding Designation}"
+                       EmailTitle = "{Binding Email}"
+                       PhoneTitle = "{Binding PhoneNumber}"
+                       ImageURL = "{Binding ImageURL}"/>
+      
+       <flowcontrols:FlowListView x:Name="myModuleDetails"
+                                  Grid.Row="1"
+                                  Grid.Column="0"
+                                  IsVisible="true"
+                                  Margin="5,0,5,10"
+                                  FlowColumnCount="3"
+                                  FlowItemsSource="{Binding ObservableModuleCellViewModel}"
+                                  SeparatorColor="Transparent"
+                                  HasUnevenRows="true"
+                                  BackgroundColor="Transparent">
+            <flowcontrols:FlowListView.FlowColumnTemplate>
+              <DataTemplate>
+                <Frame Margin="0,0,1,1"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       CornerRadius="2"
+                       HasShadow="false">
+                  <StackLayout Margin="0,0,5,0">
+                <Image Source="{Binding IconName}"/>
+                    <Label Text="{Binding TitleName}"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           TextColor="Black"
+                           Font="15, Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="15"
+                           VerticalOptions="Start" />
+                  
+                  </StackLayout>
+                </Frame>
+              </DataTemplate>
+            </flowcontrols:FlowListView.FlowColumnTemplate>
+          </flowcontrols:FlowListView>
       
     </Grid>
   </base:BasePage.Content>

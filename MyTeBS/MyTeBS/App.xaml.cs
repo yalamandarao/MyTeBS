@@ -1,5 +1,7 @@
 ﻿using System;
+using DLToolkit.Forms.Controls;
 using FreshMvvm;
+using MyTeBS.Modules.Home;
 using MyTeBS.Modules.Login;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,8 +14,8 @@ namespace MyTeBS
     public App()
     {
       InitializeComponent();
-
-      var page = FreshPageModelResolver.ResolvePageModel<LoginPageModel>();
+      FlowListView.Init();
+      var page = FreshPageModelResolver.ResolvePageModel<HomePageModel>();
       var basicNavContainer = new FreshNavigationContainer(page, "login")
       {
         BarTextColor = Color.White,

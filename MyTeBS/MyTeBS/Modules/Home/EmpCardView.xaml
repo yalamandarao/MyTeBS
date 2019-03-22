@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="MyTeBS.Modules.Home.EmpCardView">
+  <ContentView.Content>
+        <Frame 
+             BackgroundColor="Red"
+             IsClippedToBounds="false"
+             CornerRadius="0"
+             HasShadow="false">
+        
+        <Grid>
+          <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="75"/>
+              <ColumnDefinition Width="80*"/>
+          </Grid.ColumnDefinitions>
+        
+        <StackLayout Grid.Row="0" 
+                     Grid.Column="0" 
+                     Grid.RowSpan="5" 
+                     VerticalOptions="Center">
+
+          <controls:CircleImage HeightRequest="75" 
+                                WidthRequest="75" 
+                                BorderThickness="4"
+                                x:Name="ImageSource"
+                                Source="http://upload.wikimedia.org/wikipedia/commons/5/55/Tamarin_portrait.JPG" Aspect="AspectFill">
+          </controls:CircleImage>
+          
+        </StackLayout>
+          <Label Text="Yalamandarao Inaganti"
+                 x:Name="NameLabel"
+                 Font="Bold, 22"
+                 Grid.Row="0" Grid.Column="1"
+                 TextColor="White"/>
+           <Label Text="Sr. Mobile Developer"
+                 x:Name="DesignationLabel"
+                 Font="Bold, 14"
+                 Grid.Row="1" Grid.Column="1"
+                 TextColor="White"/>
+           <Label Text="Email: Yalamandarao.i@totalebizsolutions.com" 
+                 Font="Bold, 14"
+                 x:Name="EmailLabel"
+                 Grid.Row="2" Grid.Column="1"
+                 TextColor="White"/>
+           <Label Text="Phone: +65 91366778" 
+                 Font="Bold, 14"
+                 x:Name="PhoneLabel"
+                 Grid.Row="3" Grid.Column="1"
+                 TextColor="White"/>
+          <Label Text="www.totalebizsolutions.com" 
+                 Font="Bold, 14"
+                 Grid.Row="4" Grid.Column="1"
+                 TextColor="White"/>
+        </Grid>
+        </Frame>
+  </ContentView.Content>
+</ContentView>
+

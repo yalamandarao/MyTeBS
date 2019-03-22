@@ -147,6 +147,10 @@
     <ImageAsset Include="Assets.xcassets\tebs_logo.imageset\tebs_logo.png" />
     <ImageAsset Include="Assets.xcassets\tebs_logo.imageset\tebs_logo%403x.png" />
     <ImageAsset Include="Assets.xcassets\tebs_logo.imageset\tebs_logo%402x.png" />
+    <ImageAsset Include="Assets.xcassets\group.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\group.imageset\group.png" />
+    <ImageAsset Include="Assets.xcassets\group.imageset\group%402x.png" />
+    <ImageAsset Include="Assets.xcassets\group.imageset\group%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -169,5 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\tebs_logo.imageset\" />
+    <Folder Include="Assets.xcassets\group.imageset\" />
   </ItemGroup>
 </Project>

@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using MyTeBS.Core.Base;
 using Xamarin.Forms;
 
-namespace MyTeBS.Modules.Dictionary
+namespace MyTeBS.Modules.MyClaim
 {
-  public partial class DictionaryPage : BasePage
+  public partial class MyClaimPage : BasePage
   {
-    public DictionaryPage()
+    public MyClaimPage()
     {
       InitializeComponent();
-      Title = "TeBS Group";
     }
   }
 }
