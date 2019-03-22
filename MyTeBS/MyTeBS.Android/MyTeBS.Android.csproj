@@ -85,6 +85,12 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\tebs_logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tebs_logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tebs_logo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tebs_logo.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\tebs_logo.png" />
+    <AndroidResource Include="Resources\drawable\splash_background.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
